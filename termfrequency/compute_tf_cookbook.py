@@ -45,6 +45,7 @@ def scan():
     data_str = "".join(data)
     words = words + data_str.split()
 
+
 def remove_stop_words():
     """
     Remove the stop words from the data file as we don't count them

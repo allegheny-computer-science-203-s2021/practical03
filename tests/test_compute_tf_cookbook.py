@@ -34,24 +34,7 @@ def test_read_file_populates_data():
     assert len(compute_tf_cookbook.data) != 0
 
 
-def test_read_file_populates_data_another():
-    """Checks that the singleline comment count works"""
-    # pylint: disable=len-as-condition
-    assert len(compute_tf_cookbook.data) == 0
-    compute_tf_cookbook.read_file("inputs/input.txt")
-    assert len(compute_tf_cookbook.data) > 0
-
-
 def test_scan():
-    """Checks that the scanning for words works"""
-    # pylint: disable=len-as-condition
-
-    assert len(compute_tf_cookbook.words) == 0
-    compute_tf_cookbook.scan()
-    assert len(compute_tf_cookbook.words) != 0
-
-
-def test_scan_another():
     """Checks that the scanning for words works"""
     # pylint: disable=len-as-condition
 
